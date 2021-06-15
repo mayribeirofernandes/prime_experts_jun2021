@@ -32,7 +32,7 @@ Logar no meu terminal uma PESSOA
     Log To Console    ${PESSOA.nome} ${PESSOA.sobrenome} ${PESSOA.idade} anos!        
 
 Logar no meu terminal uma LISTA DE FRUTAS
-    ## Declaro localmente uma nova variável
+    # Declaro localmente uma nova variável
     ${outra_fruta}     Set Variable    abacaxi
     ## Declaro uma nova variável em escopo do teste
     Set Test Variable  ${nova_fruta}   morango
@@ -40,3 +40,6 @@ Logar no meu terminal uma LISTA DE FRUTAS
     Log To Console     ${FRUTAS}
     Log Many           ${FRUTAS}
     Log To Console     ${nova_fruta}-${outra_fruta}
+    Log To Console     ${FRUTAS}[0]
+    Log To Console     ${FRUTAS[1]}
+    Log To Console     ${FRUTAS[2]}
