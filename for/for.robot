@@ -16,7 +16,7 @@ Teste do FOR IN (para percorrer listas)
 Imprimir de ${A} a ${B}
     FOR   ${numero}   IN RANGE   ${A}    ${B}
         Log To Console    Estou no número: ${numero}!
-        ${RESULTADO}      Evaluate  ${numero}+10
+        ${RESULTADO}      Evaluate    ${numero}+10
         Log To Console    Número+10 = ${RESULTADO}
     END
 
